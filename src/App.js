@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Story from './containers/Story'
 
 class App extends Component {
   render() {
@@ -12,6 +13,7 @@ class App extends Component {
             <p>
             Tuffy and Friends!
             </p>
+            <Story />
           </header>
         </div>
       </div>
