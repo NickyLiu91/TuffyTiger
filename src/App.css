@@ -14,18 +14,28 @@
   height: 40vmin;
 }
 
-.App-header {
+#page {
   position: relative;
   background-color: GreenYellow;
-  height: 90vh;
+  height: 800px;
   width: 120vh;
-  font-size: calc(10px + 2vmin);
   color: red;
 }
 
+#picture-location {
+  height: 550px;
+  background-color: red;
+  width: 100%;
+}
+
+img {
+  height: 550px;
+  width: 100%;
+}
+
 #text {
-  border: solid gold 5px;
-  height: 30vh;
+  /*border: solid gold 5px;*/
+  height: 250px;
   width: 100%;
   position: absolute;
   bottom: 0px;

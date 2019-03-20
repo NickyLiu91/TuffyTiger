@@ -8,8 +8,8 @@ export default class Story extends React.Component {
     line: 0,
     page: 0,
     storyText: [
-      {text: "Click to begin reading!", image: "image"},
-      {text: "Tuffy and his friends were all playing in a Savannah.", image: "image"},
+      {text: "Click to begin reading!", image: "images/jungle1.jpg"},
+      {text: "Tuffy and his friends were all playing in a jungle.", image: "image"},
       {text: "They were playing catch, and Tuffy threw the ball to Poedy", image: "image"},
       {text: "But Tuffy missed, and hte ball flew into a lake.", image: "image"},
       {text: "Tuffy: Oh no! I can't swim, how are we going to get the ball?", image: "image"},
@@ -50,9 +50,13 @@ export default class Story extends React.Component {
 
   render () {
     return(
-      <div id="text" onClick={event => this.nextLine()}>
-      <Images image={this.state.storyText[this.state.line].image}/>
-      <Lines line={this.state.storyText[this.state.line].text}/>
+      <div id="page">
+        <div id="picture-location" onClick={event => this.nextLine()}>
+          <Images image={this.state.storyText[this.state.line].image}/>
+        </div>
+        <div id="text" onClick={event => this.nextLine()}>
+          <Lines line={this.state.storyText[this.state.line].text}/>
+        </div>
       </div>
     )
   }
