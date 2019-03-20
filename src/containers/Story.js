@@ -4,6 +4,7 @@ import Lines from '../components/Lines'
 export default class Story extends React.Component {
 
   state = {
+    line: 0,
     page: 0,
     storyText: [
       "Click to begin reading!",
@@ -15,7 +16,7 @@ export default class Story extends React.Component {
       "FLIP",
       "Tuffy: Oh no! I can't swim, how are we going to get the ball?",
       "FLIP",
-      "Poedy: Don't worry, I'm a great swimmer!"
+      "Poedy: Don't worry, I'm a great swimmer!",
       "Poedy jumped into the lake and return the ball in a jiffy.",
       "FLIP",
       "It was now Poedy's turn to throw the ball to Arlee.",
@@ -45,10 +46,10 @@ export default class Story extends React.Component {
       "I can't really dance or sing, but I am good with computers Poedy said.",
       "I can make the video.",
       "FLIP",
-      "Then I can be the dancer! Arlee said with a twirl."
+      "Then I can be the dancer! Arlee said with a twirl.",
       "FLIP",
-      "Perfect, then I will be the singer! Tuffy said in a singing voice."
-      "With the three of us, we can make a perfect video!"
+      "Perfect, then I will be the singer! Tuffy said in a singing voice.",
+      "With the three of us, we can make a perfect video!",
       "FLIP",
       "They combined their skills: Tuffy sang, Arlee danced, and Poedy combined everything into a video.",
       "FLIP",
@@ -60,10 +61,16 @@ export default class Story extends React.Component {
     ]
   }
 
+  nextLine = () => {
+    this.setState({
+      line: this.state.line + 1
+    })
+  }
+
   render () {
     return(
-      <div id="text">
-      <Lines line={this.state.storyText[this.state.page]}/>
+      <div id="text" onClick={event => this.nextLine()}>
+      <Lines line={this.state.storyText[this.state.line]}/>
       </div>
     )
   }
