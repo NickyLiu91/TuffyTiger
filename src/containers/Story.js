@@ -1,5 +1,6 @@
 import React from "react"
 import Lines from '../components/Lines'
+import Images from '../components/Images'
 
 export default class Story extends React.Component {
 
@@ -50,7 +51,8 @@ export default class Story extends React.Component {
   render () {
     return(
       <div id="text" onClick={event => this.nextLine()}>
-      <Lines line={this.state.storyText[this.state.line]}/>
+      <Images image={this.state.storyText[this.state.line].image}/>
+      <Lines line={this.state.storyText[this.state.line].text}/>
       </div>
     )
   }
