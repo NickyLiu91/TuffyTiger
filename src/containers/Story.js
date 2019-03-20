@@ -35,9 +35,28 @@ export default class Story extends React.Component {
       "Tuffy: Don't worry, I'm really strong!",
       "FLIP",
       "And with a great roar, Tuffy lifted the rocks and got the ball back.",
-       "FLIP",
-       "They played until they were exhausted, and they decided to take a break.",
-       ""
+      "FLIP",
+      "They played until they were exhausted, and went home to take a break.",
+      "FLIP",
+      "They were watching television, when video came on that gave them a good idea.",
+      "FLIP",
+      "Hey, we should make our own video, Tuffy exclaimed.",
+      "FLIP",
+      "I can't really dance or sing, but I am good with computers Poedy said.",
+      "I can make the video.",
+      "FLIP",
+      "Then I can be the dancer! Arlee said with a twirl."
+      "FLIP",
+      "Perfect, then I will be the singer! Tuffy said in a singing voice."
+      "With the three of us, we can make a perfect video!"
+      "FLIP",
+      "They combined their skills: Tuffy sang, Arlee danced, and Poedy combined everything into a video.",
+      "FLIP",
+      "When they were done, they high fived each other and cheered.",
+      "FLIP",
+      "The three of us can do everything when we are together, since we are all great at different things!",
+      "Together Tuffy and his friends Poedy and Arlee make the perfect team because of their different abilities and interests.",
+      "That is why they are all best friends."
     ]
   }
 
