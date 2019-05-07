@@ -27,7 +27,7 @@ export default class Story extends React.Component {
       {text: "Tuffy: Don't worry, I'm really strong!", image: "image"},
       {text: "And with a great roar, Tuffy lifted the rocks and got the ball back.", image: "image"},
       {text: "They played until they were exhausted, and went home to take a break.", image: "image"},
-      {text: "They were watching television, when video came on that gave them a good idea.", image: "image"},
+      {text: "They were watching television, when a video came on that gave them a good idea.", image: "image"},
       {text: "Hey, we should make our own video, Tuffy exclaimed.", image: "image"},
       {text: "I can't really dance or sing, but I am good with computers Poedy said.", image: "image"},
       {text: "I can make the video.", image: "image"},
